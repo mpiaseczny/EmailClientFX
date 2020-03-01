@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Slider fx:id="fontSizePicker" layoutX="160.0" layoutY="124.0" prefHeight="14.0" prefWidth="350.0" />
+      <ChoiceBox fx:id="themePicker" layoutX="160.0" layoutY="187.0" prefHeight="26.0" prefWidth="350.0" />
+      <Label layoutX="34.0" layoutY="123.0" text="Font Size:" />
+      <Label layoutX="34.0" layoutY="191.0" text="Color Theme:" />
+      <Label layoutX="270.0" layoutY="30.0" text="Options">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="474.0" layoutY="318.0" mnemonicParsing="false" onAction="#okButtonAction" prefHeight="34.0" prefWidth="71.0" text="OK" />
+      <Button layoutX="381.0" layoutY="318.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefHeight="34.0" prefWidth="71.0" text="Cancel" />
+   </children>
+</AnchorPane>
