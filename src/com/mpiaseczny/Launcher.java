@@ -11,11 +11,6 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-//        Parent root = FXMLLoader.load(getClass().getResource("view/LoginWindow.fxml"));
-//        primaryStage.setTitle("Email Client FX");
-//        primaryStage.setScene(new Scene(root));
-//        primaryStage.show();
-
         ViewFactory viewFactory = new ViewFactory(new EmailManager());
         viewFactory.showLoginWindow();
     }

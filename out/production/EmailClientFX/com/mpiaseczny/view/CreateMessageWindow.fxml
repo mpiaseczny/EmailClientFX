@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane styleClass="container" prefHeight="632.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="73.0" text="To:" />
+      <TextField fx:id="recipientTextField" layoutX="87.0" layoutY="69.0" prefHeight="26.0" prefWidth="498.0" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="12.600000000000023" />
+      <Label layoutX="14.0" layoutY="115.0" text="Subject:" />
+      <TextField fx:id="subjectTextField" layoutX="87.0" layoutY="111.0" prefHeight="26.0" prefWidth="498.0" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="12.600000000000023" />
+      <HTMLEditor fx:id="htmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="14.0" layoutY="158.0" prefHeight="406.0" prefWidth="570.0" AnchorPane.bottomAnchor="67.60000000000002" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="13.600000000000023" AnchorPane.topAnchor="158.0" />
+      <Button layoutX="503.0" layoutY="575.0" mnemonicParsing="false" onAction="#sendButtonAction" prefHeight="36.0" prefWidth="70.0" text="Send" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="24.599999999999994" />
+      <Label fx:id="sendErrorLabel" layoutX="26.0" layoutY="585.0" AnchorPane.bottomAnchor="29.4" AnchorPane.leftAnchor="26.0" />
+      <Label layoutX="14.0" layoutY="35.0" text="From:" />
+      <ChoiceBox fx:id="emailAccountChoice" layoutX="87.0" layoutY="31.0" prefHeight="26.0" prefWidth="498.0" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="12.600000000000023" />
+   </children>
+</AnchorPane>
